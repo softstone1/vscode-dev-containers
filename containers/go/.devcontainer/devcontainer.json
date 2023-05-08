@@ -26,7 +26,31 @@
 			
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
-				"golang.Go"
+				"golang.Go",
+				"aaron-bond.better-comments",
+				"hediet.vscode-drawio",
+				"enkia.tokyo-night",
+				"aaron-bond.better-comments",
+				"hediet.vscode-drawio",
+				"enkia.tokyo-night",
+				"formulahendry.auto-rename-tag",
+				"GitHub.codespaces",
+				"GitHub.remotehub",
+				"mhutchie.git-graph",
+				"donjayamanne.githistory",
+				"GitHub.copilot",
+				"ms-vscode.vscode-github-issue-notebooks",
+				"GitHub.vscode-pull-request-github",
+				"eamodio.gitlens",
+				"hashicorp.terraform",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"VisualStudioExptTeam.intellicode-api-usage-examples",
+				"mongodb.mongodb-vscode",
+				"ms-playwright.playwright",
+				"esbenp.prettier-vscode",
+				"Prisma.prisma",
+				"svelte.svelte-vscode",
+				"redhat.vscode-yaml"
 			]
 		}
 	},
@@ -38,5 +62,11 @@
 	// "postCreateCommand": "go version",
 
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "vscode"
+	"remoteUser": "vscode",
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/curl-homebrew:1": {
+			"version": "latest"
+		},
+		"ghcr.io/rio/features/k9s:1": {}
+	}
 }
